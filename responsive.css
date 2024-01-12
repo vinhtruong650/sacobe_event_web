@@ -1,0 +1,476 @@
+@media only screen and (orientation: portrait) {
+    .body {
+        position: absolute !important;
+        top: 50% !important;
+        left: 52% !important;
+        transform: translate(-50%, -50%) !important;
+        width: 95% !important;
+        height: 35% !important;
+        padding: 0 4% !important;
+    }
+    .lstNumberLucky{
+        font-size: 10vw !important;
+        text-align: center;
+        opacity: 0;
+        padding-top: 1.5rem;
+    }
+    .NumberLucky,.lstNumberLucky {
+    font-size: 1000%;
+    font-weight: bold;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    z-index: 9999;
+    transform: translate(-50%,-50%);
+    color: #d5b509;
+    -webkit-background-clip: text;
+    text-shadow: 0px 10px 10px #3d0707,0px -10px 10px white;
+    }
+}
+@media only screen and (max-width:800px) {
+    body {
+        overflow: hidden;
+    }
+    .lstG5-rs,.lstG4-rs{
+        width: 90%;
+        justify-content:center;
+        align-items:center ;
+        display: flex;
+        position: absolute;
+        bottom: -10%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        flex-wrap: wrap;
+        z-index: 999;
+        
+    }
+    .bindingNum{
+        animation: bindingNum1 1s linear forwards;
+    }
+    .numberItem{
+        
+        font-size: 2em;
+        
+    }
+    @keyframes bindingNum1{
+        0%{
+            font-size: 100%;
+            transform: scale(0.5);
+            opacity: 0;
+        }
+        50%{
+            font-size: 100%;
+            transform: scale(1.5);
+            opacity: 1;
+        }
+        100%{
+            font-size: 100%;
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+    .body {
+        position: absolute;
+        top: 70%;
+        left: 52%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        height: 65%;
+        padding: 0 4%;
+    }
+
+    .body .item {
+        width: 16%;
+    }
+
+    .nd {
+        display: inline-block;
+        width: 70%;
+        height: 25vh;
+        margin-left: 15%;
+    }
+
+    .logo {
+        top: 0;
+        display: inline-block;
+        position: absolute;
+        width: 20%;
+        height: 30vh;
+    }
+
+    .tt {
+        margin-left: -10%;
+        width: 120%;
+        height: 50%;
+        /* background-image: url("assets/img/HNKH_LED_LUCKY DRAW_HNKH.png"); */
+    }
+
+    .toLarge {
+        animation: none;
+    }
+
+    .tt img {
+        transform: translateY(-5%);
+        width: 45%;
+        height: 150%;
+    }
+
+    .giai {
+        /* position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top:60px; */
+        width: 100%;
+        height: 80%;
+        /* background-size: 100% 100%; */
+        /* background-image: url("assets/img/RUT_THAM_MAY_MAN.png"); */
+    }
+
+    .giai img {
+        transform: translateY(-30%);
+        width: 100%;
+        max-width: 70vw;
+        /* height: 100%; */
+    }
+
+    .giai-r {
+        position: absolute;
+        top: 25%;
+        left: 20%;
+        transform: translateY(-80%);
+        text-align: center;
+        opacity: 0;
+        height: 10%;
+
+    }
+    .giai-r img{
+        width: 60%;
+    }
+
+    .gift {
+        background-size: 90% 75%;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        width: 30%;
+        height: 30%;
+        opacity: 0;
+        position: absolute;
+        top: 45%;
+        left: 65%;
+        transform: translate(-50%, -50%);
+        z-index: -99;
+    }
+
+    .NumberLucky {
+        font-size: 1000%;
+    font-weight: bold;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    z-index: 9999;
+    transform: translate(-50%,-50%);
+    color: #d5b509;
+    -webkit-background-clip: text;
+    text-shadow: 0px 10px 10px #3d0707,0px -10px 10px white;
+    }
+
+    .gift .name-g {
+        /* height: 120%; */
+    }
+
+    .gift .img-g {
+        margin-top: 48%;
+        height: 70%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: contain;
+    }
+
+    .moveGift {
+        animation: none;
+        z-index: 99;
+        opacity: 1;
+    }
+
+    .movel2 {
+        animation: movel2_rp 1s linear forwards;
+    }
+
+    @keyframes movel2_rp {
+        from {
+            height: 100%;
+            width: 18%;
+            left: 18%;
+        }
+
+        to {
+            height: 100%;
+            width: 15%;
+            left: 0%;
+        }
+    }
+
+    @keyframes moveGift1 {
+        from {
+            width: 30%;
+            height: 30%;
+            left: 60%;
+        }
+
+        to {
+            width: 30%;
+            height: 30%;
+            left: 60%;
+        }
+    }
+
+    .move1 {
+        position: absolute;
+        animation: move5_rp 1s linear forwards;
+        left: auto;
+    }
+
+    .move2 {
+        position: absolute;
+        animation: move4_rp 1s linear forwards;
+        left: auto;
+    }
+
+    .move3 {
+        position: absolute;
+        animation: move3_rp 1s linear forwards;
+        left: auto;
+    }
+
+    .move4 {
+        position: absolute;
+        animation: move2_rp 1s linear forwards;
+        left: auto;
+    }
+
+    .move5 {
+        position: absolute;
+        animation: move1_rp 1s linear forwards;
+        left: auto;
+    }
+
+    .gift_5_custom {
+        right: 10%;
+        top: 25%;
+    }
+
+    .gift_4_custom {
+        top: 25%;
+    }
+
+    .gift_3_custom {
+        top: 25%;
+    }
+
+    .gift_2_custom {
+        top: 25%;
+    }
+
+    .gift_1_custom {
+        top: 25%;
+    }
+
+    @keyframes move5_rp {
+        from {
+            width: 16%;
+            left: 70%;
+        }
+
+        to {
+            width: 20%;
+            left: 18%;
+        }
+    }
+
+    @keyframes move4_rp {
+        from {
+            width: 16%;
+            left: 52%;
+        }
+
+        to {
+            width: 20%;
+            left: 18%;
+        }
+    }
+
+    @keyframes move3_rp {
+        from {
+            width: 16%;
+            left: 34%;
+        }
+
+        to {
+            width: 20%;
+            left: 18%;
+        }
+    }
+
+    @keyframes move2_rp {
+        from {
+            width: 16%;
+            left: 20.5%;
+        }
+
+        to {
+            width: 20%;
+            left: 18%;
+        }
+    }
+
+    @keyframes move1_rp {
+        from {
+            width: 16%;
+            left: 0%;
+        }
+
+        to {
+            width: 20%;
+            left: 18%;
+        }
+    }
+    .lstG5{
+        width: 85%;
+    }
+    .lstG4{
+        width: 85%;
+    }
+    .lstG5,
+    .lstG4 {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        position: absolute;
+        bottom: 40%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        flex-wrap: wrap;
+        z-index: 999;
+    }
+    .lstG5 .numberItem{
+        background-color: brown;
+        border: 3px solid gold;
+        width: 15%;
+        aspect-ratio: 1;
+    }
+    .lstG4 .numberItem{
+        background-color: brown;
+        border: 3px solid gold;
+        width: 25%;
+        aspect-ratio: 1;
+    }
+}
+
+@media only screen and(min-width:835px) and (max-width:1500px) {
+    body {
+        overflow: hidden;
+    }
+
+    .gift {
+        background-size: 90% 75%;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        width: 30%;
+        height: 40%;
+        opacity: 0;
+        position: absolute;
+        top: 53%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+        z-index: -99;
+    }
+
+    .body .item {
+        margin: 0 1%;
+        display: inline-block;
+        height: 100%;
+        width: 25%;
+    }
+
+    .move1 {
+        position: absolute;
+        animation: move5_rp 1s linear forwards;
+        left: auto;
+    }
+
+    .move2 {
+        position: absolute;
+        animation: move4_rp 1s linear forwards;
+        left: auto;
+    }
+
+    .move3 {
+        position: absolute;
+        animation: move3_rp 1s linear forwards;
+        left: auto;
+    }
+
+    .move4 {
+        position: absolute;
+        animation: move2_rp 1s linear forwards;
+        left: auto;
+    }
+
+    .move5 {
+        position: absolute;
+        animation: move1_rp 1s linear forwards;
+        left: auto;
+    }
+
+    @keyframes move5_rp {
+        from {
+            left: 70%;
+        }
+
+        to {
+            left: 0%;
+        }
+    }
+
+    @keyframes move4_rp {
+        from {
+            left: 52%;
+        }
+
+        to {
+            left: 0%;
+        }
+    }
+
+    @keyframes move3_rp {
+        from {
+            left: 34%;
+        }
+
+        to {
+            left: 0%;
+        }
+    }
+
+    @keyframes move2_rp {
+        from {
+            left: 20.5%;
+        }
+
+        to {
+            left: 0%;
+        }
+    }
+
+    @keyframes move1_rp {
+        from {
+            left: 0%;
+        }
+
+        to {
+            left: 0%;
+        }
+    }
+
+}

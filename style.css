@@ -1,0 +1,538 @@
+@font-face {
+    font-family: 'CustomFont'; /* Đặt tên cho font */
+    src: url('fonts/Averta-Black.otf') format('opentype'), /* Đường dẫn đến file font */
+         url('fonts/Averta-Bold.otf') format('opentype'),
+         url('fonts/Averta-Regular.otf') format('opentype');
+          /* Các định dạng font khác nếu có */
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "CustomFont";
+}
+body {
+    background-color: red;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("assets/img/HNKH_LED_LUCKY DRAW_NEN.jpg");
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+.title {
+    height: 25vh;
+    width: 100%;
+}
+.nd{
+    display: inline-block;
+    width: 60%;
+    height: 25vh;
+    margin-left: 20%;
+}
+.logo{
+    top: 0;
+    display: inline-block;
+    position: absolute;
+    width: 20%;
+    height: 25vh;
+}
+.gold-logo{
+    opacity: 0;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    position: absolute;
+    width: 25%;
+    height: 30vh;
+}
+
+.logo img,.gold-logo img{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+}
+.tt{
+    width: 100%;
+    height: 50%;
+    /* background-image: url("assets/img/HNKH_LED_LUCKY DRAW_HNKH.png"); */
+}
+.tt img{
+    transform: translateY(-5%);
+    width: 45%;
+    height: 150%;
+}
+.giai img{
+    transform: translateY(-30%);
+    width: 100%;
+    max-width: 50vw;
+    /* height: 100%; */
+}
+.giai{
+    /* position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top:60px; */
+    width: 100%;
+    height: 50%;
+    /* background-size: 100% 100%; */
+    /* background-image: url("assets/img/RUT_THAM_MAY_MAN.png"); */
+}
+.giai-r{
+    transform: translateY(-80%);
+    text-align: center;
+    opacity: 0;
+}
+.giai-r img{
+    width: 30%;
+}
+.container .tt {
+    text-align: center;
+}
+.container .giai {
+    text-align: center;
+}
+.body{
+    position: absolute;
+    top:60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 65%;
+    height: 65%;
+    display: flex;
+    justify-content: space-between;
+}
+.body .item{
+    margin: 0 1%;
+    display: inline-block;
+    height: 95%;
+    width: 16%;
+    max-width: 20vh;
+    text-align: center;
+    max-height: 70vh;
+    /* position: relative; */
+}
+.size{
+    max-width: 100%;
+    max-height: 100%;
+}
+.body .item .size-n{
+    width: 40%;
+    position: absolute;
+    transform: translateX(-50%);
+    top:100%;
+}
+.d-none-d{
+    display: none;
+}
+.start-state{
+    animation: animateExample 1.5s linear infinite;
+}
+.body .state-f:hover{
+    animation: lac 0.5s linear forwards;
+}
+.reset{
+    animation: rs 1s linear;
+}
+.reset2{
+    animation: rs2 1s linear;
+}
+.d-none{
+    animation: hide 0.2s linear;
+    opacity: 0;
+}
+.move1{
+    position: absolute ;
+    animation: move5 1s linear forwards;
+    left: auto;
+}
+.move2{
+    position: absolute ;
+    animation: move4 1s linear forwards;
+    left: auto;
+}
+.move3{
+    position: absolute ;
+    animation: move3 1s linear forwards;
+    left: auto;
+}
+.move4{
+    position: absolute ;
+    animation: move2 1s linear forwards;
+    left: auto;
+}
+.move5{
+    position: absolute ;
+    animation: move1 1s linear forwards;
+    left: auto;
+}
+.lstG5-rs,.lstG4-rs{
+    width: 40%;
+    justify-content:center;
+    align-items:center ;
+    display: flex;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    flex-wrap: wrap;
+    z-index: 999;
+    
+}
+.lstG5-rs .numberItem{
+    background-color: brown;
+    border: 3px solid gold;
+    width: 14%;
+    margin: 2%;
+    aspect-ratio: 1;
+}
+.lstG4-rs .numberItem{
+    background-color: brown;
+    border: 3px solid gold;
+    width: 18%;
+    margin: 2%;
+    aspect-ratio: 1;
+}
+.gift{
+    background-size: 90% 75%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 30%;
+    height: 65%;
+    opacity: 0;
+    position: absolute;
+    top: 55%;
+    left: 60%;
+    transform: translate(-50%,-50%);
+    z-index: -99;
+}
+
+.gift .img-g{
+    margin-top: 20%;
+    height: 80%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain ;
+}
+.gift .img-g-cus{
+    margin-top: 20%;
+    height: 80%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% 100% !important ;
+}
+.gift_5_custom{
+    right: 10%;
+    top:40%;
+}
+.gift_4_custom{
+    top:20%;
+}
+.gift_3_custom{
+    top:20%;
+}
+.gift_2_custom{
+    top:18%;
+}
+.gift_1_custom{
+    top:0%;
+}
+.gift .name-g{
+    position: absolute;
+    height: 25%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.unhideGift{
+    animation: unhideGift 2.2s linear forwards;
+}
+.movel2{
+    animation: movel2 1s linear forwards;
+}
+.moveGift{
+    animation: moveGift 1s linear forwards;
+    z-index: 99;
+    opacity: 1;
+}
+
+.lstG5,.lstG4
+{
+    justify-content:center;
+    align-items:center ;
+    display: flex;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    flex-wrap: wrap;
+    z-index: 999;
+}
+.lstG5{
+    width: 45%;
+}
+.lstG4{
+    width: 35%;
+}
+.hideNum{
+    display: none !important;
+}
+
+#g5{
+     background-size:100% 100%;
+    background-repeat: no-repeat;
+    background-image: url("assets/img/G5_HNKH_LED_LUCKY DRAW_LIEN LAGER.png");
+}
+#g4{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url("assets/img/G4_HNKH_LED_LUCKY DRAW_LIEN EXPORT.png");
+}
+#g3{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url("assets/img/G3_HNKH_LED_LUCKY DRAW_LIEN SPECIAL.png");
+}
+#g2{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url("assets/img/G2_HNKH_LED_LUCKY DRAW_LIEN CHILL.png");
+}
+#g1{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url("assets/img/G1_HNKH_LED_LUCKY DRAW_LIEN GOLD.png");
+}
+.numberItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2em;
+    /* overflow: hidden; */
+    margin: 2%;
+    box-shadow: 0 0 8px 5px rgba(159, 159, 38, 0.76);
+    border-radius: 5px;
+}
+.lstG5 .numberItem{
+    background-color: brown;
+    border: 3px solid gold;
+    width: 16%;
+    aspect-ratio: 1;
+}
+.lstG4 .numberItem{
+    background-color: brown;
+    border: 3px solid gold;
+    width: 25%;
+    aspect-ratio: 1;
+}
+.lstNumberLucky{
+    font-size: 5vw !important;
+    text-align: center;
+    opacity: 0;
+    padding-top: 1.5rem;
+}
+.NumberLucky,.lstNumberLucky{
+    font-size: 1000%;
+    font-weight: bold;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    z-index: 9999;
+    transform: translate(-50%,-50%);
+    color: #d5b509;
+    -webkit-background-clip: text;
+    text-shadow: 0px 10px 10px #3d0707,0px -10px 10px white;
+}
+.toSmall{
+    animation: toSmall 1s linear forwards;
+}
+.toLarge{
+    animation: toLarge 1s linear forwards;
+}
+.bindingNum{
+    animation: bindingNum 1s linear forwards;
+}
+@keyframes bindingNum{
+    0%{
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    25%{
+        transform: scale(1.5);
+        opacity: 1;
+    }
+    50%{
+        transform: scale(1.8);
+        opacity: 1;
+    }
+    75%{
+        transform: scale(1.5);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes toLarge{
+    from{
+        transform: scale(1);
+        height: 50%;
+        padding-top: 0;
+        margin: 0;
+    }
+    to{
+        transform: scale(1.2);
+        height: 65%;
+        padding-top: 2%;
+        margin: 0;
+    }
+}
+@keyframes toSmall{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(0.5);
+    }
+}
+@keyframes unhideGift{
+0% { opacity:0;z-index: 0;}
+50%{ opacity:0.4;z-index: 0;}
+100%{ opacity:1;z-index: 99;}
+}
+@keyframes hide{
+0%{opacity: 1;}
+50%{opacity: 0.5;}
+100%{opacity: 0;}
+}
+@keyframes move5{
+from{left: 70%;}
+to{
+left: 20%;
+}
+}
+@keyframes rs{
+    0%{opacity: 0;}
+    75%{opacity: 0.5;}
+    100%{opacity: 1;}
+    }
+    @keyframes rs2{
+        0%{opacity: 0;}
+        75%{opacity: 0.75;}
+        100%{opacity: 1;}
+        }
+@keyframes remove5{
+    from{left: 0%;}
+    to{
+    left: 70%;
+    }
+    }
+@keyframes move4{
+from{left: 52%;}
+to{
+left: 20%;
+}
+}
+@keyframes remove4{
+    from{left: 0%;}
+    to{
+    left: 52%;
+    }
+    }
+@keyframes move3{
+from{left: 34%;}
+to{
+left: 20%;
+}
+}
+@keyframes remove3{
+    from{left: 0%;}
+    to{
+    left: 34%;
+    }
+    }
+@keyframes move2{
+from{left: 20.5%;}
+to{
+left: 20%;
+}
+}
+@keyframes remove2{
+    from{left: 0%;}
+    to{
+    left: 20.5%;
+    }
+    }
+@keyframes move1{
+from{left: 0%;}
+to{
+left: 20%;
+}
+}
+@keyframes remove1{
+    from{left: 0%;}
+    to{
+    left: 0%;
+    }
+    }
+@keyframes movel2{
+from{height: 100%;
+width: 18%;
+left: 27%;}
+to{
+height: 100%;
+    width: 15%;
+left: 0%;
+}
+}
+@keyframes moveGift{
+from{width: 30%;
+    height: 55%;
+    left: 60%;}
+to{
+    width: 20%;
+    height: 40%;
+    left: 82%;
+}
+}
+@keyframes animateExample {
+0% {
+transform: scale(1);
+opacity: 1;
+}
+50% {
+transform: scale(1.01);
+opacity: 0.95;
+}
+100% {
+transform: scale(1);
+opacity: 1;
+}
+}
+
+@keyframes lac{
+0%{
+transform: translateX(2%);
+}
+20%{
+transform: translateX(-2%);
+}
+40%{
+transform: translateX(2%);
+}
+60%{
+transform: translateX(-2%);
+}
+100%{
+transform: translateX(0%);
+}
+}
